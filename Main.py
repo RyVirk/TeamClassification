@@ -20,8 +20,6 @@ df = pd.read_csv('JoinedStats.csv')
 df = df[['Poss','G+A-PK','npxG+xA','TotalTouches','TouchesD3','TouchesM3','TouchesA3','TklWon','TklD3','TklM3','TklA3',
 'TotalPressures','SuccessfulPressures','Press%','PressD3','PressM3','PressA3','PassesCompleted','PassesAttempted','PassCompletion%']]
 
-df = df.fillna(df.mean())
-
 from sklearn import preprocessing
 
 x = df.values
