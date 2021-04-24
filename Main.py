@@ -8,6 +8,8 @@ from sklearn.cluster import KMeans
 
 #removed unwanted columns and joined 4 datasets seen in folder separately outside of main file
 
+#try with raw data without filtering, and select files(attacking/defensive) as well, binary classification, try KNN neighbors too
+
 '''
 JOINED STATS TABLE START
 '''
@@ -49,7 +51,7 @@ squad = ['Ajax','Atalanta','Atletico Madrid','Barcelona','Basaksehir','Bayern Mu
 #print(reduced)
 
 
-kmeans = KMeans(n_clusters=4)
+kmeans = KMeans(n_clusters=5, random_state=100)
 
 kmeans = kmeans.fit(reduced)
 
@@ -67,9 +69,9 @@ reduced.head()
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.set(style="white")
+sns.set(style="dark")
 ax = sns.lmplot(x="x", y="y", hue='cluster', data = reduced, legend=False,
-fit_reg=False, size = 15, scatter_kws={"s": 250})
+fit_reg=False, height = 15, scatter_kws={"s": 250})
 texts = []
 for x, y, s in zip(reduced.x, reduced.y, reduced.squad):
     texts.append(plt.text(x, y, s))
@@ -80,5 +82,5 @@ plt.ylabel("PC 2", fontsize = 20)
 plt.show()
 
 '''
-JOINED STATS TABLE START
+JOINED STATS TABLE END
 '''
