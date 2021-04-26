@@ -12,7 +12,7 @@ from sklearn.cluster import KMeans
 
 '''
 JOINED STATS TABLE START
-
+'''
 
 Handle = open("JoinedStats.csv",encoding='latin-1')
 
@@ -53,6 +53,7 @@ kmeans = KMeans(n_clusters=5, random_state=100)
 
 kmeans = kmeans.fit(reduced)
 
+
 labels = kmeans.predict(reduced)
 # centroid values
 centroid = kmeans.cluster_centers_
@@ -60,9 +61,15 @@ centroid = kmeans.cluster_centers_
 clusters = kmeans.labels_.tolist()
 
 reduced['cluster'] = clusters
+#print(clusters)
 reduced['squad'] = squad
 reduced.columns = ['x', 'y', 'cluster', 'squad']
+#print(reduced)
 reduced.head()
+
+
+#SENDING DATAFRAME TO CSV FOR TABLEAU VISUALS  
+reduced.to_csv('JoinedForTableau.csv' , index = False)
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -79,7 +86,7 @@ plt.xlabel("PC 1", fontsize = 20)
 plt.ylabel("PC 2", fontsize = 20)
 plt.show()
 
-
+'''
 JOINED STATS TABLE END
 '''
 
@@ -88,7 +95,7 @@ JOINED STATS TABLE END
 '''
 RAW PASSINGSTATS TABLE START
 '''
-
+'''
 Handle = open("PassingStats.csv",encoding='latin-1')
 
 df2 = pd.read_csv('PassingStats.csv',skiprows=1)
@@ -154,6 +161,7 @@ plt.tick_params(labelsize=15)
 plt.xlabel("PC 1", fontsize = 20)
 plt.ylabel("PC 2", fontsize = 20)
 plt.show()
+'''
 
 '''
 RAW PASSINGSTATS TABLE END
