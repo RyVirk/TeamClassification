@@ -11,7 +11,7 @@ Handle = open("JoinedStats.csv",encoding='latin-1')
 df = pd.read_csv('JoinedStats.csv')
 #print(df)
 
-df = df[['TotalTouches','TouchesD3','TouchesM3','TouchesA3']]
+df = df[['TotalTouches','TouchesD3','TouchesM3','TouchesA3', 'G+A-PK']]
 
 df['PercentTouchD3'] = df['TouchesD3'] / df['TotalTouches']
 df['PercentTouchM3'] = df['TouchesM3'] / df['TotalTouches']
@@ -26,15 +26,15 @@ squad = ['Ajax','Atalanta','Atletico Madrid','Barcelona','Basaksehir','Bayern Mu
 #df['squad'] = squad
 
 
+tf = df[['PercentTouchD3','PercentTouchM3','PercentTouchA3', 'G+A-PK']]
+
 df = df[['PercentTouchD3','PercentTouchM3','PercentTouchA3']]
 
+'''x = df.values
+print(x)'''
 
 
-x = df.values
-#print(x)
-
-
-kmeans = KMeans(n_clusters=5, random_state=100)
+kmeans = KMeans(n_clusters=4, random_state=100)
 
 kmeans = kmeans.fit(df)
 
@@ -46,7 +46,10 @@ clusters = kmeans.labels_.tolist()
 
 df['cluster'] = clusters
 df['squad'] = squad
-#df.columns = ['D3', 'M3', 'A3', 'cluster', 'squad']
+tf['cluster'] = clusters
+tf['squad'] = squad
+
+tf.to_csv('touches_tableau.csv', index=False)
 #print(df.head())
 
 #print(range(len(df)))
