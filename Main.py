@@ -96,7 +96,7 @@ df2 = pd.read_csv('PassingStats.csv',skiprows=1)
 
 df2 = df2[['Cmp','Att','Cmp%','TotDist','PrgDist','Cmp','Att','Cmp%','Cmp','Att','Cmp%','Cmp','Att','Cmp%','Ast','xA','A-xA','KP','PPA','CrsPA','Prog']]
 
-df2 = df2.fillna(df2.mean())
+#df2 = df2.fillna(df2.mean())
 
 from sklearn import preprocessing
 
@@ -158,4 +158,3 @@ plt.show()
 '''
 RAW PASSINGSTATS TABLE END
 '''
-
