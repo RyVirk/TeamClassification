@@ -59,15 +59,10 @@ ax = fig.add_subplot(111, projection = '3d')
 
 ax.scatter(df['PercentTouchD3'], df['PercentTouchM3'], df['PercentTouchA3'], c = df['cluster'], marker = 'o', s=100)
 
-labels = ['Ajax','Atalanta','Atletico Madrid','Barcelona','Basaksehir','Bayern Munich','Chelsea','Club Brugge','Dortmund',
-'DynamoKyiv','Ferencvaros','Inter','Juventus','Krasondar','Lazio','Liverpool','Loko Moscow',
-'Monchen Gladbach','Manchester City','Manchester Utd','Marseille','Midtjylland','Olympiacos','Paris SG','Porto',
-'RB Leipzig','RB Salzburg','Real Madrid', 'Rennes','Sevilla','Shakhtar','Zenit']
-
 ax.set_xlabel('Def3Touches')
 ax.set_ylabel('Mid3Touches')
 ax.set_zlabel('Att3Touches')
-for x, y, z, label in zip(df.PercentTouchD3, df.PercentTouchM3, df.PercentTouchA3, labels):
+for x, y, z, label in zip(df.PercentTouchD3, df.PercentTouchM3, df.PercentTouchA3, df.squad):
     ax.text(x, y, z, label, fontsize = 'xx-small')
 plt.title('3D Scatter of Possession by Third')
 plt.show()
