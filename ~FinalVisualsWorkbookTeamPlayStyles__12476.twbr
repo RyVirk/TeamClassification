@@ -1,0 +1,2138 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.21.0315.1017                               -->
+<workbook source-build='2020.3.7 (20203.21.0315.1017)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='FinalVisualsWorkbookTeamPlayStyles' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='JoinedForTableau' inline='true' name='federated.1nce0w80ekxaq611q7xpy0i9bfc9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='JoinedForTableau' name='textscan.10j17gp1nvs2sh1dbk9il1gsqigo'>
+            <connection class='textscan' directory='C:/Users/Ryv19/OneDrive/Documents/DataFolder/IS487/FinalProject/TeamClassification' filename='JoinedForTableau.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='AttackingForTableau.csv' table='[AttackingForTableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='x' ordinal='0' />
+            <column datatype='real' name='y' ordinal='1' />
+            <column datatype='integer' name='cluster' ordinal='2' />
+            <column datatype='string' name='squad' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='JoinedForTableau.csv' table='[JoinedForTableau#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='real' name='x' ordinal='0' />
+              <column datatype='real' name='y' ordinal='1' />
+              <column datatype='integer' name='cluster' ordinal='2' />
+              <column datatype='string' name='squad' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='DefendingForTableau.csv' table='[DefendingForTableau#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='real' name='x' ordinal='0' />
+              <column datatype='real' name='y' ordinal='1' />
+              <column datatype='integer' name='cluster' ordinal='2' />
+              <column datatype='string' name='squad' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='AttackingForTableau.csv' table='[AttackingForTableau#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='real' name='x' ordinal='0' />
+              <column datatype='real' name='y' ordinal='1' />
+              <column datatype='integer' name='cluster' ordinal='2' />
+              <column datatype='string' name='squad' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[cluster (AttackingForTableau.csv)]' value='[AttackingForTableau.csv].[cluster]' />
+          <map key='[cluster (DefendingForTableau.csv)]' value='[DefendingForTableau.csv].[cluster]' />
+          <map key='[cluster]' value='[JoinedForTableau.csv].[cluster]' />
+          <map key='[squad (AttackingForTableau.csv)]' value='[AttackingForTableau.csv].[squad]' />
+          <map key='[squad (DefendingForTableau.csv)]' value='[DefendingForTableau.csv].[squad]' />
+          <map key='[squad]' value='[JoinedForTableau.csv].[squad]' />
+          <map key='[x (AttackingForTableau.csv)]' value='[AttackingForTableau.csv].[x]' />
+          <map key='[x (DefendingForTableau.csv)]' value='[DefendingForTableau.csv].[x]' />
+          <map key='[x]' value='[JoinedForTableau.csv].[x]' />
+          <map key='[y (AttackingForTableau.csv)]' value='[AttackingForTableau.csv].[y]' />
+          <map key='[y (DefendingForTableau.csv)]' value='[DefendingForTableau.csv].[y]' />
+          <map key='[y]' value='[JoinedForTableau.csv].[y]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[JoinedForTableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DefendingForTableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AttackingForTableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[JoinedForTableau.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[JoinedForTableau.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[JoinedForTableau.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>squad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[squad]</local-name>
+            <parent-name>[JoinedForTableau.csv]</parent-name>
+            <remote-alias>squad</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x (DefendingForTableau.csv)]</local-name>
+            <parent-name>[DefendingForTableau.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y (DefendingForTableau.csv)]</local-name>
+            <parent-name>[DefendingForTableau.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster (DefendingForTableau.csv)]</local-name>
+            <parent-name>[DefendingForTableau.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>squad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[squad (DefendingForTableau.csv)]</local-name>
+            <parent-name>[DefendingForTableau.csv]</parent-name>
+            <remote-alias>squad</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x (AttackingForTableau.csv)]</local-name>
+            <parent-name>[AttackingForTableau.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y (AttackingForTableau.csv)]</local-name>
+            <parent-name>[AttackingForTableau.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster (AttackingForTableau.csv)]</local-name>
+            <parent-name>[AttackingForTableau.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>squad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[squad (AttackingForTableau.csv)]</local-name>
+            <parent-name>[AttackingForTableau.csv]</parent-name>
+            <remote-alias>squad</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='AttackingForTableau.csv' datatype='table' name='[__tableau_internal_object_id__].[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DefendingForTableau.csv' datatype='table' name='[__tableau_internal_object_id__].[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='JoinedForTableau.csv' datatype='table' name='[__tableau_internal_object_id__].[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[cluster (AttackingForTableau.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[cluster (DefendingForTableau.csv)]' role='measure' type='quantitative' />
+      <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+      <column caption='Squad' datatype='string' name='[squad]' role='dimension' type='nominal' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column-instance column='[cluster (AttackingForTableau.csv)]' derivation='Sum' name='[sum:cluster (AttackingForTableau.csv):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[cluster (DefendingForTableau.csv)]' derivation='Sum' name='[sum:cluster (DefendingForTableau.csv):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[cluster]' derivation='Sum' name='[sum:cluster:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/TEMP_1v8vimz1slcs8t14xkf080unxxxv.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/27/2021 09:26:20 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB' table='[Extract].[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912' table='[Extract].[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]' type='table' />
+            <relation name='DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319' table='[Extract].[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]' type='table' />
+            <relation name='AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB' table='[Extract].[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[cluster (AttackingForTableau.csv)]' value='[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB].[cluster]' />
+            <map key='[cluster (DefendingForTableau.csv)]' value='[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319].[cluster]' />
+            <map key='[cluster]' value='[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912].[cluster]' />
+            <map key='[squad (AttackingForTableau.csv)]' value='[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB].[squad]' />
+            <map key='[squad (DefendingForTableau.csv)]' value='[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319].[squad]' />
+            <map key='[squad]' value='[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912].[squad]' />
+            <map key='[x (AttackingForTableau.csv)]' value='[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB].[x]' />
+            <map key='[x (DefendingForTableau.csv)]' value='[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319].[x]' />
+            <map key='[x]' value='[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912].[x]' />
+            <map key='[y (AttackingForTableau.csv)]' value='[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB].[y]' />
+            <map key='[y (DefendingForTableau.csv)]' value='[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319].[y]' />
+            <map key='[y]' value='[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912].[y]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='JoinedForTableau' increment-value='%null%' refresh-type='create' rows-inserted='96' timestamp-start='2021-04-27 21:26:20.837' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x]</local-name>
+              <parent-name>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>0</ordinal>
+              <family>JoinedForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y]</local-name>
+              <parent-name>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>1</ordinal>
+              <family>JoinedForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cluster]</local-name>
+              <parent-name>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>2</ordinal>
+              <family>JoinedForTableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>squad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[squad]</local-name>
+              <parent-name>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</parent-name>
+              <remote-alias>squad</remote-alias>
+              <ordinal>3</ordinal>
+              <family>JoinedForTableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x (DefendingForTableau.csv)]</local-name>
+              <parent-name>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DefendingForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y (DefendingForTableau.csv)]</local-name>
+              <parent-name>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DefendingForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cluster (DefendingForTableau.csv)]</local-name>
+              <parent-name>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DefendingForTableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>squad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[squad (DefendingForTableau.csv)]</local-name>
+              <parent-name>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</parent-name>
+              <remote-alias>squad</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DefendingForTableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x (AttackingForTableau.csv)]</local-name>
+              <parent-name>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>8</ordinal>
+              <family>AttackingForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y (AttackingForTableau.csv)]</local-name>
+              <parent-name>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>9</ordinal>
+              <family>AttackingForTableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cluster (AttackingForTableau.csv)]</local-name>
+              <parent-name>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>10</ordinal>
+              <family>AttackingForTableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>squad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[squad (AttackingForTableau.csv)]</local-name>
+              <parent-name>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</parent-name>
+              <remote-alias>squad</remote-alias>
+              <ordinal>11</ordinal>
+              <family>AttackingForTableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[sum:cluster:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:cluster (AttackingForTableau.csv):ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:cluster (DefendingForTableau.csv):ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AttackingForTableau.csv' id='AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB'>
+            <properties context=''>
+              <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='AttackingForTableau.csv' table='[AttackingForTableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='x' ordinal='0' />
+                  <column datatype='real' name='y' ordinal='1' />
+                  <column datatype='integer' name='cluster' ordinal='2' />
+                  <column datatype='string' name='squad' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB' table='[Extract].[AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB]' type='table' />
+            </properties>
+          </object>
+          <object caption='DefendingForTableau.csv' id='DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319'>
+            <properties context=''>
+              <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='DefendingForTableau.csv' table='[DefendingForTableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='x' ordinal='0' />
+                  <column datatype='real' name='y' ordinal='1' />
+                  <column datatype='integer' name='cluster' ordinal='2' />
+                  <column datatype='string' name='squad' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319' table='[Extract].[DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319]' type='table' />
+            </properties>
+          </object>
+          <object caption='JoinedForTableau.csv' id='JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912'>
+            <properties context=''>
+              <relation connection='textscan.10j17gp1nvs2sh1dbk9il1gsqigo' name='JoinedForTableau.csv' table='[JoinedForTableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='x' ordinal='0' />
+                  <column datatype='real' name='y' ordinal='1' />
+                  <column datatype='integer' name='cluster' ordinal='2' />
+                  <column datatype='string' name='squad' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912' table='[Extract].[JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[squad (DefendingForTableau.csv)]' />
+              <expression op='[squad (AttackingForTableau.csv)]' />
+            </expression>
+            <first-end-point object-id='DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319' />
+            <second-end-point object-id='AttackingForTableau.csv_57EBF37271C44A5FA2345014A3D859BB' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[squad]' />
+              <expression op='[squad (DefendingForTableau.csv)]' />
+            </expression>
+            <first-end-point object-id='JoinedForTableau.csv_CD503A5E5AE24623911F5DDA0C855912' />
+            <second-end-point object-id='DefendingForTableau.csv_1D56DF31A0EC4A09A853374F5A1FD319' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='HighlightTeam' name='[Action1]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source type='sheet' worksheet='Playstyle Clusters' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Playstyle Clusters' />
+      </command>
+    </action>
+    <action caption='Highlight1' name='[Action2]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='StyleDashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Squad,squad (AttackingForTableau.csv),squad (DefendingForTableau.csv)' />
+        <param name='target' value='StyleDashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Attacking Style Clusters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JoinedForTableau' name='federated.1nce0w80ekxaq611q7xpy0i9bfc9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nce0w80ekxaq611q7xpy0i9bfc9'>
+            <column datatype='integer' name='[cluster (AttackingForTableau.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[squad]' derivation='None' name='[none:squad:nk]' pivot='key' type='nominal' />
+            <column caption='Squad' datatype='string' name='[squad]' role='dimension' type='nominal' />
+            <column-instance column='[cluster (AttackingForTableau.csv)]' derivation='Sum' name='[sum:cluster (AttackingForTableau.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[x (AttackingForTableau.csv)]' derivation='Sum' name='[sum:x (AttackingForTableau.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y (AttackingForTableau.csv)]' derivation='Sum' name='[sum:y (AttackingForTableau.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[x (AttackingForTableau.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[y (AttackingForTableau.csv)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='1' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='8' />
+            <format attr='font-weight' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#0000004b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]' />
+              <text column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+              <lod column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</rows>
+        <cols>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</cols>
+        <mark-labels>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester City&quot;</value>
+                <value>1</value>
+                <value>1.4611071410321044</value>
+                <value>0.030771957321041137</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-3' y='14' />
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Inter&quot;</value>
+                <value>0</value>
+                <value>0.16213685950693812</value>
+                <value>0.101192090837546</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='13' y='8' />
+          </mark-label>
+          <mark-label id='10'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>0</value>
+                <value>0.3196612658438065</value>
+                <value>0.029382425135523537</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='11' />
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;RB Leipzig&quot;</value>
+                <value>0</value>
+                <value>0.078931083642125061</value>
+                <value>0.017925898238787111</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Dortmund&quot;</value>
+                <value>4</value>
+                <value>0.41377309697624742</value>
+                <value>0.00089876195383980096</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='8' y='-9' />
+          </mark-label>
+          <mark-label id='13'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Paris SG&quot;</value>
+                <value>0</value>
+                <value>0.052673685939685411</value>
+                <value>-0.0073517320292245166</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-14' y='-11' />
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester Utd&quot;</value>
+                <value>0</value>
+                <value>0.20153756070987427</value>
+                <value>0.28622615840144006</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='45' y='0.545455' />
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shakhtar&quot;</value>
+                <value>2</value>
+                <value>-0.4442949590687823</value>
+                <value>-0.55488529259223673</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='22' y='-7' />
+          </mark-label>
+          <mark-label id='16'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Monchen Gladbach&quot;</value>
+                <value>2</value>
+                <value>-0.40790698282336152</value>
+                <value>-0.19524529048694669</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-53' y='0.545455' />
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Olympiacos&quot;</value>
+                <value>2</value>
+                <value>-0.43858128889795223</value>
+                <value>-0.32918908925656021</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='33' y='0.545455' />
+          </mark-label>
+          <mark-label id='18'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (AttackingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (AttackingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ferencvaros&quot;</value>
+                <value>2</value>
+                <value>-0.50380675874381886</value>
+                <value>-0.59284118335035607</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-35' y='0.636364' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{DD30B503-B729-494D-9941-70209C7B4EA0}' />
+    </worksheet>
+    <worksheet name='Defensive Style Clusters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JoinedForTableau' name='federated.1nce0w80ekxaq611q7xpy0i9bfc9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nce0w80ekxaq611q7xpy0i9bfc9'>
+            <column datatype='integer' name='[cluster (DefendingForTableau.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[squad]' derivation='None' name='[none:squad:nk]' pivot='key' type='nominal' />
+            <column caption='Squad' datatype='string' name='[squad]' role='dimension' type='nominal' />
+            <column-instance column='[cluster (DefendingForTableau.csv)]' derivation='Sum' name='[sum:cluster (DefendingForTableau.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[x (DefendingForTableau.csv)]' derivation='Sum' name='[sum:x (DefendingForTableau.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y (DefendingForTableau.csv)]' derivation='Sum' name='[sum:y (DefendingForTableau.csv):qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[x (DefendingForTableau.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[y (DefendingForTableau.csv)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='1' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='8' />
+            <format attr='font-weight' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#0000004b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]' />
+              <lod column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+              <text column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</rows>
+        <cols>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</cols>
+        <mark-labels>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Midtjylland&quot;</value>
+                <value>1</value>
+                <value>0.29944156004083688</value>
+                <value>-0.20568866378265005</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='31' y='-4' />
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Bayern Munich&quot;</value>
+                <value>1</value>
+                <value>0.69810941161382656</value>
+                <value>0.13104527745057437</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='41' y='0.363636' />
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Zenit&quot;</value>
+                <value>2</value>
+                <value>-0.047604663079607104</value>
+                <value>-0.43325609572290213</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='-5' />
+          </mark-label>
+          <mark-label id='14'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ajax&quot;</value>
+                <value>1</value>
+                <value>0.49327235533117841</value>
+                <value>-0.14237662623289332</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='0.545455' />
+          </mark-label>
+          <mark-label id='15'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Atletico Madrid&quot;</value>
+                <value>1</value>
+                <value>0.35399402008368253</value>
+                <value>0.069434474054060807</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='44' y='0.636364' />
+          </mark-label>
+          <mark-label id='16'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Real Madrid&quot;</value>
+                <value>1</value>
+                <value>0.22527989628476572</value>
+                <value>-0.036232874166425622</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='34' y='0.636364' />
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Dortmund&quot;</value>
+                <value>1</value>
+                <value>0.13424594096549244</value>
+                <value>-0.012113648187526881</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-5' y='-9' />
+          </mark-label>
+          <mark-label id='18'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Basaksehir&quot;</value>
+                <value>0</value>
+                <value>-0.19100747571626375</value>
+                <value>-0.077486341804560835</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-34' y='0.454545' />
+          </mark-label>
+          <mark-label id='19'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Club Brugge&quot;</value>
+                <value>0</value>
+                <value>0.047225783929849816</value>
+                <value>0.22324996439184111</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='33' y='8' />
+          </mark-label>
+          <mark-label id='20'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x (DefendingForTableau.csv):qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y (DefendingForTableau.csv):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>1</value>
+                <value>0.17792787643370467</value>
+                <value>0.0088156031154321655</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.454545' y='10' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{04D68E8C-6D8D-4086-A772-A94527B54016}' />
+    </worksheet>
+    <worksheet name='Playstyle Clusters'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='JoinedDataset' path='/workbooks/FinalVisualsWorkbookTeamPlayStyles' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JoinedForTableau' name='federated.1nce0w80ekxaq611q7xpy0i9bfc9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nce0w80ekxaq611q7xpy0i9bfc9'>
+            <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+            <column-instance column='[squad]' derivation='None' name='[none:squad:nk]' pivot='key' type='nominal' />
+            <column caption='Squad' datatype='string' name='[squad]' role='dimension' type='nominal' />
+            <column-instance column='[cluster]' derivation='Sum' name='[sum:cluster:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[x]' derivation='Sum' name='[sum:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='Sum' name='[sum:y:qk]' pivot='key' type='quantitative' />
+            <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+            <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]' scope='cols' value='Possession Dominance' />
+            <format attr='title' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]' scope='rows' value='Pressing Dominance' />
+            <encoding attr='space' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='1.0' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='1.0' scope='cols' type='space' />
+            <format attr='stroke-size' value='1' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='bold' />
+            <format attr='text-align' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='auto' />
+            <format attr='wrap' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='auto' />
+            <format attr='vertical-align' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='bottom' />
+            <format attr='color' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='#333333' />
+            <format attr='font-size' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='8' />
+            <format attr='text-align' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='auto' />
+            <format attr='vertical-align' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='center' />
+            <format attr='color' field='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#0000004b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]' />
+              <text column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+              <lod column='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</rows>
+        <cols>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Atletico Madrid&quot;</value>
+                <value>1</value>
+                <value>0.085281660737549156</value>
+                <value>0.31637998424318731</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='37' y='-1' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Lazio&quot;</value>
+                <value>0</value>
+                <value>-0.54912576405844615</value>
+                <value>-0.21386744221420437</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='15' y='0.272727' />
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Zenit&quot;</value>
+                <value>0</value>
+                <value>-0.4890377768403163</value>
+                <value>0.15919294719208155</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-10' y='-5' />
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Manchester City&quot;</value>
+                <value>2</value>
+                <value>1.6795373719269082</value>
+                <value>-0.70797986612288777</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ferencvaros&quot;</value>
+                <value>0</value>
+                <value>-0.67009234117821015</value>
+                <value>-0.16457065455330488</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.727273' y='-9' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Marseille&quot;</value>
+                <value>0</value>
+                <value>-0.43912364221525768</value>
+                <value>0.15529405723242906</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='24' y='0.545455' />
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Monchen Gladbach&quot;</value>
+                <value>0</value>
+                <value>-0.57408934701425096</value>
+                <value>-0.01775942662714327</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-50' y='9' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Basaksehir&quot;</value>
+                <value>0</value>
+                <value>-0.56811432359787806</value>
+                <value>-0.002855866526170721</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='32' y='0.545455' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DynamoKyiv&quot;</value>
+                <value>0</value>
+                <value>-0.80618168112648314</value>
+                <value>-0.29893600986819852</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='30' y='-2' />
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Atalanta&quot;</value>
+                <value>1</value>
+                <value>-0.031774093643367987</value>
+                <value>0.34606816791020339</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-4' y='-6' />
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;RB Salzburg&quot;</value>
+                <value>4</value>
+                <value>0.26500617387535419</value>
+                <value>1.3005837115821393</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-36' y='0.636364' />
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Liverpool&quot;</value>
+                <value>1</value>
+                <value>0.32985491221322166</value>
+                <value>0.12760059057241838</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-25' y='-4' />
+          </mark-label>
+          <mark-label id='12'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Dortmund&quot;</value>
+                <value>1</value>
+                <value>0.39368006991601429</value>
+                <value>0.034553497059374903</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='25' y='0.0909091' />
+          </mark-label>
+          <mark-label id='13'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ajax&quot;</value>
+                <value>1</value>
+                <value>0.21503832594549713</value>
+                <value>0.47840703871785911</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='13' y='0.272727' />
+          </mark-label>
+          <mark-label id='14'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Paris SG&quot;</value>
+                <value>1</value>
+                <value>-0.11834063927834045</value>
+                <value>0.072664626723060358</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='14' y='-5' />
+          </mark-label>
+          <mark-label id='15'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Club Brugge&quot;</value>
+                <value>1</value>
+                <value>0.093984459517733696</value>
+                <value>-0.061629895355931094</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='23' y='-8' />
+          </mark-label>
+          <mark-label id='16'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[none:squad:nk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:x:qk]</field>
+                  <field>[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:y:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chelsea&quot;</value>
+                <value>3</value>
+                <value>0.37006620895121295</value>
+                <value>-0.25489686123237482</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='22' y='0.272727' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{01D4F873-9AA8-465B-8816-58DCBC5CD8F1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='StyleDashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='14' param='horz' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='97916' id='12' w='98828' x='586' y='1042'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='50781' id='3' param='vert' w='98828' x='586' y='1042'>
+                <zone h='50781' id='8' name='Playstyle Clusters' w='98828' x='586' y='1042'>
+                  <layout-cache minheight='199' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='47135' id='5' param='vert' w='49414' x='586' y='51823'>
+                <zone h='47135' id='10' name='Attacking Style Clusters' w='49414' x='586' y='51823'>
+                  <layout-cache minheight='143' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='47135' id='6' param='horz' w='49414' x='50000' y='51823'>
+                <zone h='47135' id='11' name='Defensive Style Clusters' w='49414' x='50000' y='51823'>
+                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='19' param='vert' w='98828' x='586' y='1042'>
+                <zone fixed-size='280' h='50781' id='8' is-fixed='true' name='Playstyle Clusters' w='98828' x='586' y='1042'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47135' id='10' is-fixed='true' name='Attacking Style Clusters' w='49414' x='586' y='51823'>
+                  <layout-cache minheight='143' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47135' id='11' is-fixed='true' name='Defensive Style Clusters' w='49414' x='50000' y='51823'>
+                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0033CE3F-3540-4D63-8F8D-E3D7E93BDC53}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Playstyle Clusters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{7C1044B8-B398-49C5-B39C-51A3369E3181}' />
+    </window>
+    <window class='worksheet' name='Attacking Style Clusters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (AttackingForTableau.csv):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{66A57124-E36E-4DCC-BC03-4FC76A4AAEE3}' />
+    </window>
+    <window class='worksheet' name='Defensive Style Clusters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1nce0w80ekxaq611q7xpy0i9bfc9].[sum:cluster (DefendingForTableau.csv):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{71BE9028-4E88-4AE5-A6F4-528FF6325229}' />
+    </window>
+    <window class='dashboard' maximized='true' name='StyleDashboard'>
+      <viewpoints>
+        <viewpoint name='Attacking Style Clusters'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Defensive Style Clusters'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Playstyle Clusters'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4DCE4F37-9526-4DBB-854E-F28DEE62EB14}' />
+    </window>
+  </windows>
+</workbook>
