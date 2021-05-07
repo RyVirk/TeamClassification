@@ -49,7 +49,7 @@ df['squad'] = squad
 tf['cluster'] = clusters
 tf['squad'] = squad
 
-tf.to_csv('touches_tableau.csv', index=False)
+#tf.to_csv('touches_tableau.csv', index=False)
 #print(df.head())
 
 #print(range(len(df)))
